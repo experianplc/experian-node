@@ -1,0 +1,15 @@
+{
+  "name": "bis_api_js_express_example",
+  "version": "1.0.0",
+  "description": "An example express application using the Experian API library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Weber <stephen.weber@experian.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.15.4"
+  }
+}
