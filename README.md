@@ -260,6 +260,14 @@ experian.setTimeout(20000); // in ms (this is 20 seconds)
 }
 ```
 
+## Examples
+
+### Node.js Express Example
+We provided an Express based example of using the Experian Node.js API in the `examples/express` folder.
+
+### Vanilla js Example
+We provided an Express based example of using the Experian Node.js API in the `examples/vanilla` folder.
+
 ## Development
 
 Run all tests:
