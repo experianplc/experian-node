@@ -1,5 +1,5 @@
 {
-    "name": "experian_node",
+    "name": "experian-node",
     "version": "0.0.1",
     "description": "Experian Node.js Library",
     "main": "lib/experian.js",

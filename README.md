@@ -13,14 +13,14 @@ Experian API documentation can be @ [Experian](http://developer.experian.com/)
 
 Install the package with:
 
-    npm install experian --save
+    npm install experian-node --save
 
 ## Usage
 
 The package needs to be configured with your account's client_id, client_secret which is available in your [Experan My Apps][api-keys]. Require it with the key's value:
 
 ``` js
-var Experian = require('experian');
+var Experian = require('experian-node');
 
 //Create instance of Experian API
 var myExperianAPI = new Experian(CLIENT_ID,CLIENT_SECRET);
