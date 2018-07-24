@@ -1,6 +1,6 @@
 {
     "name": "experian-node",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Experian Node.js Library",
     "main": "lib/experian.js",
     "directories": {
@@ -19,11 +19,11 @@
     },
     "scripts": {
         "mocha": "mocha",
-        "test": "npm run mocha"
+        "test": "mocha ./test/ --timeout 120000"
     },
     "repository": {
         "type": "git",
-        "url": "ssh://git@github.com:Experian-NA/experian-node.git"
+        "url": "ssh://git@github.com:experianplc/experian-node.git"
     },
     "keywords": [
         "experian",

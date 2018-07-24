@@ -228,6 +228,191 @@ business.us.corporateRegistrations({
 })
 ```
 
+##### Contacts
+```js
+business.us.businessContacts({
+  'bin': '716612304',
+  'subcode': '0563736'
+})
+```
+
+##### Reverse Addresses
+```js
+business.us.reverseAddresses({
+  "subcode": "0517614",
+  "street": "475 ANTON BLVD",
+  "city": "Costa Mesa",
+  "state": "CA",
+  "zip": "92626"
+})
+```
+
+##### Reverse Phones
+```js
+business.us.reversePhones({
+  "subcode": "0517614",
+  "phone": "8008888888"
+})
+```
+
+#####  Reverse TaxIDs
+```js
+business.us.reverseTaxIDs({
+  "subcode": "0563736",
+  "taxId": "222152871"
+})
+```
+
+##### Scores Search
+```js
+business.us.scoresSearch({
+    "name": "Experian",
+    "city": "Costa Mesa",
+    "state": "CA",
+    "subcode": "179116",
+    "street": "535 ANTON BLVD",
+    "zip": "92626",
+    "phone": "9495673800",
+    "taxId": "176970333",
+    "geo": true,
+    "comments": "testing",
+    "modelCode": "000224",
+    "matchReliabilityCode": 83,
+    "commercialScore": true,
+    "fsrScore": true
+})
+```
+
+##### Premier Profiles
+```js
+business.us.reportsPremierProfiles({
+  "bin": "706589164",
+  "subcode": "0563736",
+  "modelCode": "000224",
+  "comments": "12345"
+})
+```
+
+##### Premier Profiles HTML
+```js
+business.us.reportsPremierProfilesHtml({
+  "bin": "706589164",
+  "subcode": "0563736",
+  "modelCode": "000224",
+  "comments": "12345"
+})
+```
+
+#####  Aggregates
+```js
+business.us.aggregates({
+  "subcode": "0517614",
+  "bin": "796744203",
+  "extraAggs": true
+})
+```
+
+#####  MultiSegments
+```js
+business.us.multisegments({
+  "dataPoints": ["bankruptcyDetail", "bankruptcySummary", "collectionsDetail", "collectionsSummary", "businessContacts"],
+  "bin": "700000001",
+  "subcode": "0563736"
+})
+```
+
+### SBCS
+
+#####  Headers
+```js
+sbcs.us.headers({
+  'bin': '987523317',
+  'subcode': '0517614'
+})
+```
+
+#####  Aggregates
+```js
+sbcs.us.aggregates({
+  "subcode": "565949",
+  "bin": "796744203",
+  "extraAggs": true
+})
+```
+
+#####  HTML Report
+```js
+sbcs.us.reportsSbcsHtml({
+  "bin": "702596911",
+  "subcode": "0517635"
+})
+```
+
+### Consumer Credit Profile
+
+#####  Credit Reports
+```js
+sbcs.us.creditReports({
+  "creditProfile": {
+    "subscriber": {
+        "preamble": "TEST",
+        "subscriberCode": "5991764"
+    },
+    "primaryApplicant": {
+        "name": {
+            "surname": "CONSUMER",
+            "firstName": "JONATHAN",
+            "middleName": "",
+            "generationCode": ""
+        },
+        "ssn": "999999990",
+        "dob": "1985"
+    },
+    "address": {
+        "currentAddress": {
+            "street": "10655 NORTH BIRCH STREET",
+            "city": "BURBANK",
+            "state": "CA",
+            "zipCode": "91502"
+        }
+    },
+    "otherInformation": {
+        "referenceNumber": "CR API",
+        "permissiblePurposeType": {
+            "type": "",
+            "terms": "",
+            "abbreviatedAmount": ""
+        },
+        "paymentHistory84": "N"
+    },
+    "addOns": {
+        "directCheck": "",
+        "demographics": {
+            "demographicsAll": "N",
+            "demographicsPhone": "N",
+            "demographicsGeoCode": "N"
+        },
+        "riskModels": {
+            "modelIndicator": [
+                "F", "3", "B"
+            ],
+            "scorePercentile": "",
+            "profileSummary": "Y",
+            "fraudShield": "Y",
+            "mla": "",
+            "ofac": "",
+            "ofacmsg": "",
+            "staggSelect": "",
+            "uniqueConsumerIdentifier": {
+                "getUniqueConsumerIdentifier": ""
+            }
+        },
+        "options": { "optionId": [""] }
+    }
+  }
+})
+```
+
 ### Configuring Timeout
 
 Request timeout is configurable (the default is Node's default of 120 seconds):
