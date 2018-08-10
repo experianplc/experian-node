@@ -334,7 +334,7 @@ sbcs.us.headers({
 #####  Aggregates
 ```js
 sbcs.us.aggregates({
-  "subcode": "565949",
+  "subcode": "0517614",
   "bin": "796744203",
   "extraAggs": true
 })
@@ -344,7 +344,7 @@ sbcs.us.aggregates({
 ```js
 sbcs.us.reportsSbcsHtml({
   "bin": "702596911",
-  "subcode": "0517635"
+  "subcode": "0517614"
 })
 ```
 
@@ -410,6 +410,64 @@ sbcs.us.creditReports({
         "options": { "optionId": [""] }
     }
   }
+})
+```
+
+### BOP
+
+#####  BOP Reports
+```js
+sbcs.us.reportsBop({
+  "subcode":"0517614",
+  "comments":"This is a comment field",
+  "businessOwners":[  
+      {  
+        "ownerName":{  
+            "firstName":"PETE",
+            "middleName":"P",
+            "lastName":"COLEMAN",
+            "generationCode":""
+        },
+        "ssn":"123456789",
+        "currentAddress":{  
+            "street":"PO BOX 1064",
+            "city":"KOTZEBUE",
+            "state":"AK",
+            "zip":"99752"
+        },
+        "driverLicense":null,
+        "title":"",
+        "dob":null
+      }
+  ]
+})
+```
+
+#####  HTML Reports
+```js
+sbcs.us.reportsBopHtml({
+  "subcode":"0517614",
+  "comments":"This is a comment field",
+  "businessOwners":[  
+      {  
+        "ownerName":{  
+            "firstName":"PETE",
+            "middleName":"P",
+            "lastName":"COLEMAN",
+            "generationCode":""
+        },
+        "ssn":"123456789",
+        "currentAddress":{  
+            "street":"PO BOX 1064",
+            "city":"KOTZEBUE",
+            "state":"AK",
+            "zip":"99752"
+        },
+        "driverLicense":null,
+        "title":"",
+        "dob":null
+      }
+  ]
 })
 ```
 

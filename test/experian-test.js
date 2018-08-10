@@ -714,6 +714,84 @@ describe('Experian API Module', function() {
         });
     });
 
+    describe('BOP APIs', function() {
+        it('BOP Reports API will give a bop report result', function() {
+            return expect(new Promise(function(resolve, reject) {
+                    experian.bop.us.reportsBop({
+                        "subcode":"563736",
+                        "comments":"This is a comment field",
+                        "businessOwners":[  
+                           {  
+                              "ownerName":{  
+                                 "firstName":"PETE",
+                                 "middleName":"P",
+                                 "lastName":"COLEMAN",
+                                 "generationCode":""
+                              },
+                              "ssn":"999992691",
+                              "currentAddress":{  
+                                 "street":"PO BOX 1064",
+                                 "city":"KOTZEBUE",
+                                 "state":"AK",
+                                 "zip":"99752"
+                              },
+                              "driverLicense":null,
+                              "title":"",
+                              "dob":null
+                           }
+                        ]
+                        })
+                        .then((data) => {
+                            console.log(data);
+                            resolve(data);
+                        }, (error) => {
+                            console.error('ERROR');
+                            console.error(error);
+                            reject(error);
+                        });
+                }))
+                .to.eventually.have.property('results');
+        });
+
+        it('BOP HTML Report API will give a BOP HTML Report result', function() {
+            return expect(new Promise(function(resolve, reject) {
+                    experian.bop.us.reportsBopHtml({
+
+                        "subcode":"563736",
+                        "comments":"This is a comment field",
+                        "businessOwners":[  
+                           {  
+                              "ownerName":{  
+                                 "firstName":"PETE",
+                                 "middleName":"P",
+                                 "lastName":"COLEMAN",
+                                 "generationCode":""
+                              },
+                              "ssn":"999992691",
+                              "currentAddress":{  
+                                 "street":"PO BOX 1064",
+                                 "city":"KOTZEBUE",
+                                 "state":"AK",
+                                 "zip":"99752"
+                              },
+                              "driverLicense":null,
+                              "title":"",
+                              "dob":null
+                           }
+                        ]
+                        })
+                        .then((data) => {
+                              //console.log(data);
+                            resolve(data);
+                        }, (error) => {
+                            console.error('ERROR');
+                            console.error(error);
+                            reject(error);
+                        });
+                }))
+                .to.eventually.have.property('results');
+        });
+    });
 
 });
 
@@ -725,7 +803,7 @@ describe('Consumer Credit Profile API', function() {
             VERSION
         );
         experian.setTimeout(90000);
-        experian.login('sanket.selokar@experian.com', 'Chankya@161987')
+        experian.login('XXXXXX@XXXXX.com', 'XXXXXX')
             .then((data) => {
                 done();
             }, (error) => {
