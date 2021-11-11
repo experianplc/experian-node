@@ -1,38 +1,43 @@
 {
-    "name": "experian-node",
-    "version": "1.0.0",
-    "description": "Experian Node.js Library",
-    "main": "lib/experian.js",
-    "directories": {
-        "example": "examples",
-        "test": "test"
-    },
-    "dependencies": {
-        "bluebird": "3.5.0",
-        "request": "2.81.0"
-    },
-    "devDependencies": {
-        "chai": "~4.1.2",
-        "chai-as-promised": "^7.1.1",
-        "jscs": "^2.3.5",
-        "mocha": "~3.5.3"
-    },
-    "scripts": {
-        "mocha": "mocha",
-        "test": "mocha ./test/ --timeout 120000"
-    },
-    "repository": {
-        "type": "git",
-        "url": "ssh://git@github.com:experianplc/experian-node.git"
-    },
-    "keywords": [
-        "experian",
-        "business",
-        "data",
-        "api",
-        "credit",
-        "score"
-    ],
-    "author": "Experian <support@experian.com> (https://developer.experian.com)",
-    "license": "MIT"
+  "name": "experian-node",
+  "version": "1.0.1",
+  "description": "Experian Node.js Library",
+  "main": "lib/experian.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "bluebird": "3.5.0",
+    "request": "2.81.0"
+  },
+  "devDependencies": {
+    "chai": "~4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "jscs": "^2.3.5",
+    "mocha": "~3.5.3"
+  },
+  "scripts": {
+    "mocha": "mocha",
+    "test": "mocha ./test/ --timeout 120000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/experianplc/experian-node.git"
+  },
+  "keywords": [
+    "experian",
+    "business",
+    "data",
+    "api",
+    "credit",
+    "score"
+  ],
+  "author": "Experian <support@experian.com> (https://developer.experian.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/experianplc/experian-node/issues"
+  },
+  "homepage": "https://github.com/experianplc/experian-node#readme"
 }
