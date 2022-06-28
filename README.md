@@ -7,7 +7,7 @@ uses Experian client_id, client_secret, username, password and subcode (if appli
 
 ## Documentation
 
-Experian API documentation can be @ [Experian](http://developer.experian.com/)
+Experian API documentation can be @ [Experian](https://developer.experian.com/)
 
 ## Installation
 
@@ -17,7 +17,7 @@ Install the package with:
 
 ## Usage
 
-The package needs to be configured with your account's client_id, client_secret which is available in your [Experan My Apps][api-keys]. Require it with the key's value:
+The package needs to be configured with your account's client_id, client_secret which is available in your [Experan My Apps](https://developer.experian.com/apps). Require it with the key's value:
 
 ``` js
 var Experian = require('experian-node');
@@ -519,5 +519,3 @@ Run all tests:
 $ npm install
 $ npm test
 ```
-
-[api-keys]: https://developer.experian.com/user/me/apps
